@@ -1,0 +1,80 @@
+.contenedor-grid {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr 1fr 1fr;
+}
+/* Estilos para el header */
+.main-header {
+  background-color: #ffffff; /* Fondo blanco */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  width: 100%;
+  padding: 15px 50px; /* Relleno superior/inferior y a los lados */
+  position: fixed; /* Mantiene el header fijo en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  display: flex;
+  justify-content: center; /* Centra el menú horizontalmente */
+  align-items: center;
+}
+
+/* Estilos para el contenedor de la navegación */
+.nav-menu {
+  display: flex;
+  gap: 30px; /* Espacio entre los enlaces */
+}
+
+/* Estilos para los enlaces */
+.nav-link {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: #555555;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out; /* Transición suave para el color */
+}
+
+/* Efecto hover para los enlaces */
+.nav-link:hover {
+  color: #007bff; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilos para la hero section debajo del header */
+.hero-section {
+  /* Añade un padding superior para que el contenido no quede oculto bajo el header fijo */
+  padding-top: 100px;
+  min-height: 100vh; /* Opcional: para que ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #555555;
+}
+.projects-section {
+  background-color:beige ; /* Fondo claro para las secciones */
+ min-width: 100vw;
+ min-height: 100vh;
+}
+.skills-section {
+  background-color: #f12b2b; /* Fondo claro para las secciones */
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.about-section {
+  background-color: #c09f32; /* Fondo claro para las secciones */
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.contact-section {
+  background-color: #9fda41; /* Fondo claro para las secciones */
+  min-width: 100vw;
+  min-height: 100vh;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ccc; /* Color de fondo */
+  text-align: center;
+  padding: 12px 0;
+  z-index: 100;
+}
