@@ -25,11 +25,12 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(0, 0, 0, 50%);
 }
 /* Estilos para el header */
 .main-header {
   background-color: rgb(255, 255, 255, 50%); /* Fondo blanco */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Sombra sutil */
   width: 100%;
   padding: 15px 50px; /* Relleno superior/inferior y a los lados */
   position: fixed; /* Mantiene el header fijo en la parte superior */
@@ -64,6 +65,7 @@ html, body {
 
 /* Estilos para la hero section debajo del header */
 .hero-section {
+  color: blanchedalmond;
   /* Añade un padding superior para que el contenido no quede oculto bajo el header fijo */
   padding-top: 100px;
   min-height: 100vh; /* Opcional: para que ocupe toda la pantalla */
@@ -71,10 +73,9 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(85, 85, 85, 50%);
 }
 .projects-section {
-    background-color: rgba(245, 245, 220, 0.5);
+  color: blanchedalmond;
     min-width: 100vw;
     min-height: 100vh;
     padding-top: 100px;
@@ -92,6 +93,7 @@ html, body {
 
 
 .project-list {
+  color: blanchedalmond;
     display: flex
 ;
     flex-wrap: wrap;
@@ -103,7 +105,7 @@ html, body {
     align-items: center;
 }
 .skills-section {
-    background-color: rgb(241, 43, 43, 50%);
+  color: blanchedalmond;
     min-width: 100vw;
     min-height: 100vh;
     padding-top: 100px;
@@ -117,6 +119,7 @@ html, body {
     align-items: center;
 }
 .skills-list {
+  color: blanchedalmond;
     display: flex
 ;
     flex-wrap: wrap;
@@ -128,7 +131,7 @@ html, body {
     align-items: center;
 }
 .about-section {
-    background-color: rgb(192, 159, 50, 50%);
+  color: blanchedalmond;
     min-width: 100vw;
     min-height: 100vh;
     padding-top: 100px;
@@ -142,7 +145,7 @@ html, body {
     align-items: center;
 }
 .contact-section {
-    background-color: rgb(159, 218, 65, 50%);
+    color: blanchedalmond;
     min-width: 100vw;
     min-height: 100vh;
     padding-top: 100px;
