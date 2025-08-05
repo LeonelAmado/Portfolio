@@ -1,10 +1,34 @@
+/* Quita márgenes y padding globales */
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Asegura que el video cubra todo el fondo */
+  z-index: -1; /* Envía el video al fondo */
+}
+
 .contenedor-grid {
   display: grid;
   grid-template-rows: auto 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* Estilos para el header */
 .main-header {
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: rgb(255, 255, 255, 50%); /* Fondo blanco */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
   width: 100%;
   padding: 15px 50px; /* Relleno superior/inferior y a los lados */
@@ -21,6 +45,7 @@
 .nav-menu {
   display: flex;
   gap: 30px; /* Espacio entre los enlaces */
+  
 }
 
 /* Estilos para los enlaces */
@@ -46,27 +71,89 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #555555;
+  background-color: rgba(85, 85, 85, 50%);
 }
 .projects-section {
-  background-color:beige ; /* Fondo claro para las secciones */
- min-width: 100vw;
- min-height: 100vh;
+    background-color: rgba(245, 245, 220, 0.5);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex
+;
+    flex-flow: column wrap;
+    position: relative;
+    place-content: center flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.project-list {
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100vw;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
 }
 .skills-section {
-  background-color: #f12b2b; /* Fondo claro para las secciones */
-  min-width: 100vw;
-  min-height: 100vh;
+    background-color: rgb(241, 43, 43, 50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex
+;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+.skills-list {
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80vw;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: center;
 }
 .about-section {
-  background-color: #c09f32; /* Fondo claro para las secciones */
-  min-width: 100vw;
-  min-height: 100vh;
+    background-color: rgb(192, 159, 50, 50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex
+;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 .contact-section {
-  background-color: #9fda41; /* Fondo claro para las secciones */
-  min-width: 100vw;
-  min-height: 100vh;
+    background-color: rgb(159, 218, 65, 50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex
+;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 footer {
   position: fixed;
