@@ -18,14 +18,80 @@ html, body {
 
 .contenedor-grid {
   display: grid;
-  grid-template-rows: auto 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr;
+  /* La primera columna es para la barra lateral (la haremos colapsable) */
+  grid-template-columns: 250px 1fr; 
+  grid-template-rows: auto 1fr;
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0, 50%);
+  background-color: rgb(0, 0, 0, 70%);
+  overflow-x: hidden; /* Evita el scroll horizontal */
+}
+/* Estilos para la barra lateral */
+.sidebar {
+  /* Se coloca en la primera columna del grid */
+  grid-column: 1;
+  grid-row: 1 / span 2; /* Ocupa las dos filas (cabecera y contenido) */
+  background-color: #333;
+  color: white;
+  padding-top: 60px; /* Espacio para que el contenido no quede debajo del botón */
+  
+  /* Posicionamiento y transición para el efecto colapsable */
+  position: fixed;
+  height: 100%;
+  width: 250px;
+  top: 0;
+  left: 0;
+  transform: translateX(-250px); /* Inicialmente fuera de la pantalla */
+  transition: transform 0.3s ease-in-out;
+  z-index: 1050;
+}
+
+/* Cuando la barra lateral está abierta */
+.sidebar.open {
+  transform: translateX(0); /* Se mueve a su posición visible */
+}
+.nav-menu {
+    display: flex
+;
+    gap: 30px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Estilos del botón de control */
+.toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1060;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+  /* Se coloca en la segunda columna del grid */
+  grid-column: 2;
+  grid-row: 1 / span 2; /* Ocupa las dos filas */
+  transition: margin-left 0.3s ease-in-out;
+  margin-left: 0; /* Por defecto no tiene margen */
+  padding: 20px;
+}
+
+/* Clase para mover el contenido cuando la barra lateral está abierta */
+.main-content.pushed {
+  margin-left: 250px; /* Se desplaza para que no quede debajo del sidebar */
 }
 /* Estilos para el header */
 .main-header {
