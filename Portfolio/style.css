@@ -26,7 +26,6 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0, 70%);
   overflow-x: hidden; /* Evita el scroll horizontal */
 }
 /* Estilos para la barra lateral */
@@ -86,7 +85,9 @@ html, body {
   grid-row: 1 / span 2; /* Ocupa las dos filas */
   transition: margin-left 0.3s ease-in-out;
   margin-left: 0; /* Por defecto no tiene margen */
-  padding: 20px;
+  padding:0%;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 70%);
 }
 
 /* Clase para mover el contenido cuando la barra lateral está abierta */
@@ -158,6 +159,7 @@ html, body {
 }
 
 
+
 .project-list {
   color: blanchedalmond;
     display: flex
@@ -170,6 +172,7 @@ html, body {
     flex-direction: row;
     align-items: center;
 }
+
 .skills-section {
   color: blanchedalmond;
     min-width: 100vw;
