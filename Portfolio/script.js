@@ -1,3 +1,18 @@
+// Efecto de agrandado con retardo en las cards .proyecto
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.proyecto').forEach(card => {
+    let timeoutId;
+    card.addEventListener('mouseenter', () => {
+      clearTimeout(timeoutId);
+      card.classList.add('agrandada');
+    });
+    card.addEventListener('mouseleave', () => {
+      timeoutId = setTimeout(() => {
+        card.classList.remove('agrandada');
+      }, 1000);
+    });
+  });
+});
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('toggle-btn');
   const sidebar = document.getElementById('sidebar');
