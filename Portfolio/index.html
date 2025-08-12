@@ -32,14 +32,23 @@
       <source src="./multimedia/fondo2.mp4" type="video/mp4" />
     </video>
     <div class="contenedor-grid">
-      <button id="toggle-btn" class="toggle-btn">&#9776;</button>
+      <button id="toggle-btn" class="toggle-btn" aria-label="Abrir menú">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
 
       <main class="main-content">
         <section id="inicio" class="hero-section">
           <div class="hero-card" `>
             <img src="./multimedia/Yo.jpeg" alt="Yo" class="hero-image" />
             <h1>¡Bienvenido a mi Portfolio!</h1>
-            <p>Soy un desarrollador web y este es mi trabajo.</p>
+            <p>
+              Soy un programador web recién egresado, apasionado por crear
+              interfaces de usuario atractivas y funcionales. Este portfolio
+              muestra los conocimientos que adquirí en el curso de Front End
+              Developer...
+            </p>
           </div>
         </section>
 
@@ -54,8 +63,8 @@
                   Página de Aterrizaje Estática (HTML5 y CSS3)
                 </h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Aquí haré una estructura básica de una página de aterrizaje
+                  estática utilizando HTML5 y CSS3.
                 </p>
               </div>
             </div>
@@ -65,8 +74,8 @@
               <div class="card-body text-primary">
                 <h5 class="card-title">Componente Interactivo (JavaScript)</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Aquí haré un componente interactivo utilizando JavaScript para
+                  mejorar la experiencia del usuario.
                 </p>
               </div>
             </div>
@@ -76,8 +85,8 @@
               <div class="card-body text-primary">
                 <h5 class="card-title">Aplicación Web con React JS</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Aquí haré una aplicación web utilizando React JS para crear
+                  una interfaz de usuario dinámica y reactiva.
                 </p>
               </div>
             </div>
@@ -86,13 +95,111 @@
 
         <section id="skills" class="skills-section">
           <h2>Habilidades</h2>
-          <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-          </ul>
+          <div class="skills-list">
+            <div class="skill-item">
+              <span class="skill-logo">
+                <!-- HTML5 SVG -->
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path
+                    fill="#e44d26"
+                    d="M5.902 28.286L3.09 2.857h25.82l-2.813 25.428L15.99 31.143z"
+                  />
+                  <path
+                    fill="#f16529"
+                    d="M16 29.257l7.626-2.116 2.406-22.143H16z"
+                  />
+                  <path
+                    fill="#ebebeb"
+                    d="M16 13.257h-3.8l-.257-2.857H16V7.657H8.686l.067.771.687 7.714H16zm0 7.314l-.012.003-3.192-.862-.204-2.286H9.714l.401 4.5 5.873 1.629.012-.003z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M15.988 13.257v2.743h3.41l-.323 3.6-3.087.862v2.771l5.872-1.629.042-.471.672-7.543.07-.771zM15.988 7.657v2.743h7.057l.057-.514.13-1.157.067-.771z"
+                  />
+                </svg>
+              </span>
+              <span class="skill-name">HTML</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill html" style="width: 50%"></div>
+              </div>
+              <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-logo">
+                <!-- CSS3 SVG -->
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                  <path
+                    fill="#264de4"
+                    d="M5.902 28.286L3.09 2.857h25.82l-2.813 25.428L15.99 31.143z"
+                  />
+                  <path
+                    fill="#2965f1"
+                    d="M16 29.257l7.626-2.116 2.406-22.143H16z"
+                  />
+                  <path
+                    fill="#ebebeb"
+                    d="M16 13.257h-3.8l-.257-2.857H16V7.657H8.686l.067.771.687 7.714H16zm0 7.314l-.012.003-3.192-.862-.204-2.286H9.714l.401 4.5 5.873 1.629.012-.003z"
+                  />
+                  <path
+                    fill="#fff"
+                    d="M15.988 13.257v2.743h3.41l-.323 3.6-3.087.862v2.771l5.872-1.629.042-.471.672-7.543.07-.771zM15.988 7.657v2.743h7.057l.057-.514.13-1.157.067-.771z"
+                  />
+                </svg>
+              </span>
+              <span class="skill-name">CSS</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill css" style="width: 50%"></div>
+              </div>
+              <span class="skill-percent">50%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-logo">
+                <!-- JS SVG -->
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                  <rect width="32" height="32" rx="6" fill="#f7df1e" />
+                  <path
+                    d="M21.5 24.5c.6 1.1 1.4 2 2.9 2 1.2 0 2-.6 2-1.5 0-1-0.8-1.3-2.2-1.9l-.8-.3c-2.3-.9-3.8-2-3.8-4.3 0-2.1 1.6-3.7 4.1-3.7 1.8 0 3.1.6 4 2.2l-2.2 1.4c-.5-.9-1-1.2-1.8-1.2-.8 0-1.3.5-1.3 1.2 0 .8.5 1.1 1.7 1.6l.8.3c2.7 1.1 4.2 2.1 4.2 4.5 0 2.6-2 4-4.6 4-2.6 0-4.2-1.2-5-2.8zm-10.2.2c.4.7.8 1.3 1.7 1.3.8 0 1.3-.3 1.3-1.6v-7.2h2.6v7.3c0 2.7-1.6 3.9-3.8 3.9-2 0-3.2-1-3.8-2.2z"
+                    fill="#222"
+                  />
+                </svg>
+              </span>
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill js" style="width: 10%"></div>
+              </div>
+              <span class="skill-percent">10%</span>
+            </div>
+            <div class="skill-item">
+              <span class="skill-logo">
+                <!-- React SVG -->
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                  <circle cx="16" cy="16" r="3.2" fill="#61dafb" />
+                  <g stroke="#61dafb" stroke-width="2" fill="none">
+                    <ellipse rx="12" ry="5.5" cx="16" cy="16" />
+                    <ellipse
+                      rx="12"
+                      ry="5.5"
+                      cx="16"
+                      cy="16"
+                      transform="rotate(60 16 16)"
+                    />
+                    <ellipse
+                      rx="12"
+                      ry="5.5"
+                      cx="16"
+                      cy="16"
+                      transform="rotate(120 16 16)"
+                    />
+                  </g>
+                </svg>
+              </span>
+              <span class="skill-name">React</span>
+              <div class="skill-bar">
+                <div class="skill-bar-fill react" style="width: 0%"></div>
+              </div>
+              <span class="skill-percent">0%</span>
+            </div>
+          </div>
         </section>
 
         <section id="sobre-mi" class="about-section">
