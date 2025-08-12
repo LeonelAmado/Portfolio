@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -203,23 +207,132 @@
         </section>
 
         <section id="sobre-mi" class="about-section">
-          <h2>Sobre Mí</h2>
-          <p>Soy un apasionado de la tecnología y el desarrollo web.</p>
+          <div class="about-card">
+            <div class="about-img">
+              <img src="./multimedia/Yo.jpeg" alt="Foto de Leonel Amado" />
+            </div>
+            <div class="about-content">
+              <h2>Sobre Mí</h2>
+              <p>
+                Soy un apasionado de la tecnología y el desarrollo web.<br />
+                Me especializo en crear interfaces modernas, limpias y
+                funcionales.<br />
+                Disfruto aprender nuevas tecnologías y enfrentar desafíos
+                creativos.<br />
+                ¡Siempre busco superarme y aportar valor a cada proyecto!
+              </p>
+            </div>
+          </div>
+          <div class="about-social-row">
+            <!-- Logo fuera de la card, abajo a la derecha -->
+            <div
+              style="
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                margin: 32px 0 0 0;
+              "
+            >
+              <img
+                src="./multimedia/LOGOS AMADOS png.png"
+                alt="Logo Amados Muebles"
+                style="
+                  max-width: 180px;
+                  max-height: 80px;
+                  width: auto;
+                  height: auto;
+                  object-fit: contain;
+                "
+              />
+            </div>
+            <a
+              href="https://www.instagram.com/muebles.amados/"
+              target="_blank"
+              title="Instagram de la empresa"
+              class="social-link instagram-link"
+            >
+              <span class="icon-circle">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <span class="social-text">Instagram</span>
+            </a>
+            <a
+              href="https://amadosmuebles.com/"
+              target="_blank"
+              title="Sitio web de la empresa"
+              class="social-link web-link"
+            >
+              <span class="icon-circle">
+                <i class="fas fa-globe"></i>
+              </span>
+              <span class="social-text">Web</span>
+            </a>
+            <a
+              href="mailto:info@amadosmuebles.com"
+              title="Enviar mail a la empresa"
+              class="social-link mail-link"
+            >
+              <span class="icon-circle">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="social-text">Mail</span>
+            </a>
+            <a
+              href="https://wa.me/5492364337038"
+              target="_blank"
+              title="Contactar por WhatsApp"
+              class="social-link whatsapp-link"
+            >
+              <span class="icon-circle">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              <span class="social-text">WhatsApp</span>
+            </a>
+          </div>
         </section>
 
         <section id="contacto" class="contact-section">
           <h2>Contacto</h2>
-          <p>
-            Puedes contactarme a través de mi correo electrónico:
-            leonelamado12@gmail.com o seguirme en mis redes sociales.
-          </p>
+          <div class="about-social-row">
+            <a
+              href="https://www.instagram.com/_leoamado/"
+              target="_blank"
+              title="Mi perfil de Instagram"
+              class="social-link instagram-link"
+            >
+              <span class="icon-circle">
+                <i class="fab fa-instagram"></i>
+              </span>
+              <span class="social-text">Instagram</span>
+            </a>
+            <a
+              href="mailto:leonelamado12@gmail.com"
+              title="Enviar mail"
+              class="social-link mail-link"
+            >
+              <span class="icon-circle">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="social-text">Mail</span>
+            </a>
+            <a
+              href="https://wa.me/5492364518556"
+              target="_blank"
+              title="Contactar por WhatsApp"
+              class="social-link whatsapp-link"
+            >
+              <span class="icon-circle">
+                <i class="fab fa-whatsapp"></i>
+              </span>
+              <span class="social-text">WhatsApp</span>
+            </a>
+          </div>
         </section>
       </main>
     </div>
     <div id="footer-hover-zone"></div>
-    <div id="footer-hover-zone"></div>
     <footer>
-      <p>&copy; 2023 Leonel Amado. Todos los derechos reservados.</p>
+      <p>&copy; 2025 Leonel Amado. Todos los derechos reservados.</p>
     </footer>
     <script src="./script.js"></script>
   </body>
