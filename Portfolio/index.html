@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Portfolio de Leonel Amado</title>
   </head>
   <body>
-    <video class="fondo" autoplay loop muted playsinline>
-      <source src="./multimedia/fondo.mp4" type="video/mp4" />
-    </video>
     <header id="sidebar" class="sidebar">
       <nav class="nav-menu">
         <a href="#inicio" class="nav-link">Inicio</a>
@@ -19,13 +28,19 @@
         <a href="#contacto" class="nav-link">Contacto</a>
       </nav>
     </header>
+    <video class="fondo" autoplay loop muted playsinline>
+      <source src="./multimedia/fondo2.mp4" type="video/mp4" />
+    </video>
     <div class="contenedor-grid">
       <button id="toggle-btn" class="toggle-btn">&#9776;</button>
 
       <main class="main-content">
         <section id="inicio" class="hero-section">
-          <h1>¡Bienvenido a mi Portfolio!</h1>
-          <p>Soy un desarrollador web y este es mi trabajo.</p>
+          <div class="hero-card" `>
+            <img src="./multimedia/Yo.jpeg" alt="Yo" class="hero-image" />
+            <h1>¡Bienvenido a mi Portfolio!</h1>
+            <p>Soy un desarrollador web y este es mi trabajo.</p>
+          </div>
         </section>
 
         <section id="proyectos" class="projects-section">
@@ -33,12 +48,11 @@
 
           <div class="project-list">
             <div class="proyecto" style="max-width: 36rem">
-              <video class="fondo" autoplay loop muted playsinline>
-                <source src="./multimedia/fondo.mp4" type="video/mp4" />
-              </video>
-              <div class="card-header">Header</div>
+              <div class="card-header">PROYECTO 1</div>
               <div class="card-body text-primary">
-                <h5 class="card-title">Primary card title</h5>
+                <h5 class="card-title">
+                  Página de Aterrizaje Estática (HTML5 y CSS3)
+                </h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -47,9 +61,9 @@
             </div>
 
             <div class="proyecto" style="max-width: 36rem">
-              <div class="card-header">Header</div>
+              <div class="card-header">PROYECTO 2</div>
               <div class="card-body text-primary">
-                <h5 class="card-title">Primary card title</h5>
+                <h5 class="card-title">Componente Interactivo (JavaScript)</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -58,9 +72,9 @@
             </div>
 
             <div class="proyecto" style="max-width: 36rem">
-              <div class="card-header">Header</div>
+              <div class="card-header">PROYECTO 3</div>
               <div class="card-body text-primary">
-                <h5 class="card-title">Primary card title</h5>
+                <h5 class="card-title">Aplicación Web con React JS</h5>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card's content.
@@ -95,6 +109,8 @@
         </section>
       </main>
     </div>
+    <div id="footer-hover-zone"></div>
+    <div id="footer-hover-zone"></div>
     <footer>
       <p>&copy; 2023 Leonel Amado. Todos los derechos reservados.</p>
     </footer>
